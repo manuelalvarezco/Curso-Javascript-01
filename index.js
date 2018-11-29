@@ -24,5 +24,6 @@ let data = [];
 
 function agregar() {
     data.push(newPerona);
-    console.log(data);
+    // console.log(data);
+    document.getElementById('table').innerHTML += "<thead><td>" + newPerona.name + "</td><td>" + newPerona.phone + "</td><td>" + newPerona.age + "</td><td>" + newPerona.email + "</td></thead>"
 }
